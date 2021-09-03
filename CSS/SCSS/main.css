@@ -604,4 +604,42 @@ header button {
 .faq_item-answer p:nth-child(2) {
   margin-top: 35px;
 }
+
+footer .container {
+  border-top: 1px solid #666F79;
+  padding: 38px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .copyright {
+  font-family: inherit;
+  font-size: 16px;
+  color: #666F79;
+}
+
+footer .copyright a {
+  color: #666F79;
+  text-decoration: none;
+}
+
+footer .author {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  color: #666F79;
+}
+
+footer .author svg {
+  fill: #666F79;
+}
+
+footer .author .footer_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 11px;
+}
 /*# sourceMappingURL=main.css.map */
