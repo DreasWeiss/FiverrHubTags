@@ -357,6 +357,9 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
+  line-height: 1;
+  background-color: #fff;
+  color: #293746;
 }
 
 .container {
@@ -365,12 +368,23 @@ body {
   margin: 0 auto;
 }
 
+section .title {
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 44px;
+}
+
+.firstScreen {
+  background: linear-gradient(to bottom, #fff1e9, rgba(255, 241, 233, 0));
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
-  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 header button {
@@ -397,5 +411,45 @@ header button {
 
 .logo svg {
   fill: #F76A1D;
+}
+
+.hero {
+  margin-bottom: 100px;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .title {
+  font-family: inherit;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 140px;
+  color: #000000;
+}
+
+.hero .subTitle {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 14px;
+  margin-bottom: 50px;
+}
+
+.hero button {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #FFAE70 0%, #F97200 3.44%);
+  padding: 20px 78px;
+  margin-bottom: 100px;
+  box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51);
 }
 /*# sourceMappingURL=main.css.map */

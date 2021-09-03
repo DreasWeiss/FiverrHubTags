@@ -9,6 +9,9 @@ body {
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
+    line-height: 1;
+    background-color: #fff;
+    color: $black;
 }
 
 .container {
@@ -17,5 +20,16 @@ body {
     margin: 0 auto;
 }
 
+section {
+    .title {
+        font-family: inherit;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 44px;
+    }
+}
+
 // Components
+@import "./components/firstScreen";
 @import "./components/_header";
+@import "./components/heroSection";
