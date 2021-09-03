@@ -8,6 +8,7 @@
         url('ProximaSoft-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
         url('ProximaSoft-BoldIt.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -32,6 +34,7 @@
         url('ProximaSoft-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +47,7 @@
         url('ProximaSoft-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -56,6 +60,7 @@
         url('ProximaSoft-LightIt.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -68,6 +73,7 @@
         url('ProximaSoft-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -80,6 +86,7 @@
         url('ProximaSoft-SemiBoldIt.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -92,6 +99,7 @@
         url('ProximaSoft-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -104,6 +112,7 @@
         url('ProximaSoft-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -116,6 +125,7 @@
         url('ProximaSoft-RegularIt.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -128,6 +138,7 @@
         url('ProximaSoft-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -140,6 +151,7 @@
         url('ProximaSoft-MediumIt.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -152,6 +164,7 @@
         url('ProximaSoft-BlackIt.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -164,6 +177,7 @@
         url('ProximaSoft-ExtraBoldIt.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -176,6 +190,7 @@
         url('ProximaSoft-ThinIt.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -188,5 +203,6 @@
         url('ProximaSoft-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }
 
