@@ -11,14 +11,17 @@
         font-family: inherit;
         font-size: 45px;
         font-weight: 600;
+        letter-spacing: 0.6px;
         margin-top: 140px;
         color: #000000;
+        margin-bottom: 0;
     }
 
     .subTitle {
         font-family: inherit;
         font-size: 20px;
         font-weight: 600;
+        letter-spacing: 0.32px;
         margin-top: 14px;
         margin-bottom: 50px;
     }
@@ -28,6 +31,7 @@
         font-size: 15px;
         font-weight: bold;
         text-transform: uppercase;
+        letter-spacing: 0.66px;
         border: none;
         border-radius: 4px;
         color: #ffffff;
@@ -35,5 +39,9 @@
         padding: 20px 78px;
         margin-bottom: 100px;
         box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51);
+
+        &:hover {
+            box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51), 0px 0px 15px 5px rgba(255, 174, 112, 0.5);
+        }
     }
 }

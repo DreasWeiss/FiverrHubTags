@@ -373,6 +373,8 @@ section .title {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 44px;
+  text-align: center;
+  color: #000;
 }
 
 .firstScreen {
@@ -427,14 +429,17 @@ header button {
   font-family: inherit;
   font-size: 45px;
   font-weight: 600;
+  letter-spacing: 0.6px;
   margin-top: 140px;
   color: #000000;
+  margin-bottom: 0;
 }
 
 .hero .subTitle {
   font-family: inherit;
   font-size: 20px;
   font-weight: 600;
+  letter-spacing: 0.32px;
   margin-top: 14px;
   margin-bottom: 50px;
 }
@@ -444,6 +449,7 @@ header button {
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 0.66px;
   border: none;
   border-radius: 4px;
   color: #ffffff;
@@ -451,5 +457,52 @@ header button {
   padding: 20px 78px;
   margin-bottom: 100px;
   box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51);
+}
+
+.hero button:hover {
+  box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51), 0px 0px 15px 5px rgba(255, 174, 112, 0.5);
+}
+
+.features {
+  margin-bottom: 120px;
+}
+
+.features ul {
+  width: 100%;
+}
+
+.features ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 882px;
+  padding: 24px 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.04), 0px 2.68036px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.79801px 5.32008px rgba(0, 0, 0, 0.0161557);
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+.features ul li .decor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 14.3px 27.2px 0 rgba(247, 106, 29, 0.5), inset 0 13.6px 18.1px 0 #ffae70, inset 0 -9.1px 18.1px 0 rgba(206, 98, 6, 0.51);
+  background-image: linear-gradient(to top, #ffae70, #f97200);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.features ul li .text {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 1.94;
+  letter-spacing: 1px;
+  color: #293746;
+  margin-left: 24px;
 }
 /*# sourceMappingURL=main.css.map */
