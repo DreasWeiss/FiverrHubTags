@@ -1,0 +1,63 @@
+.pricing {
+    background: $lightorange;
+    padding: 31px 0;
+
+    .container {
+        max-width: 100%;
+        padding: 50px;
+        background-image: url(/IMG/logobg.svg);
+        background-repeat: repeat space;
+        background-position: top 0 left 30px;
+    }
+
+    .banner {
+        margin: 0 auto;
+        display: block;
+        max-width: 536px;
+        border-radius: 12px;
+        background-color: #fff;
+        padding: 36px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 22px;
+            height: 22px;
+            background: none;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            position: absolute;
+            top: 13px;
+            right: 13px;
+        }
+
+        &::before {
+            content: url("/IMG/priceFree.svg");
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            top: -22px;
+            right: 13px;
+        }
+
+        .title {
+            margin-top: 60px;
+            margin-bottom: 10px;
+        }
+
+        .pricingInfo {
+            text-align: center;
+            margin-bottom: 70px;
+            font-size: 20px;
+
+            span {
+                color: #000000;
+                font-weight: 600;
+            }
+        }
+    }
+}
