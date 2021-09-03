@@ -417,6 +417,7 @@ header button {
 
 .hero {
   margin-bottom: 100px;
+  background: url("/IMG/hero_bg.svg") no-repeat center;
 }
 
 .hero .container {
@@ -430,7 +431,7 @@ header button {
   font-size: 45px;
   font-weight: 600;
   letter-spacing: 0.6px;
-  margin-top: 140px;
+  margin-top: 179px;
   color: #000000;
   margin-bottom: 0;
 }
