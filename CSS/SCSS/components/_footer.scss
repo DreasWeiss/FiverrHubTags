@@ -10,6 +10,7 @@ footer {
     .copyright {
         font-family: inherit;
         font-size: 16px;
+        line-height: 1.71;
         color: $darkgrey;
 
         a {
@@ -34,6 +35,55 @@ footer {
             justify-content: center;
             align-items: center;
             margin-left: 11px;
+
+            .svglogo_footer {
+                width: 17.4px;
+                height: 33.27px;
+                margin-left: 12px;
+            }
+
+            .svglogo2_footer {
+                width: 140.37px;
+                height: 10.2px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1250px) {
+        .container {
+            padding: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        .container {
+            flex-direction: column;
+
+            .author {
+                margin-top: 35px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+        .container {
+            padding: 49px 27px 35px 27px;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .author {
+            font-size: 14px;
+            justify-content: space-between;
+
+            .footer_logo {
+                .svglogo_footer {
+                    width: 27.5px;
+                }
+            }
         }
     }
 }

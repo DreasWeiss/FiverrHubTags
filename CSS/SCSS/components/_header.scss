@@ -16,6 +16,16 @@ header {
         color: $darkgrey;
         background: none;
         padding: 15px 36px;
+
+        @media screen and (max-width: 660px) {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+        .container {
+            padding: 34px 27px;
+        }
     }
 }
 

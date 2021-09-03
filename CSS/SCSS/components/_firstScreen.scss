@@ -1,3 +1,10 @@
 .firstScreen {
     background: linear-gradient(to bottom, #fff1e9, rgba(255, 241, 233, 0));
+
+    @media screen and (max-width: 430px) {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

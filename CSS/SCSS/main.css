@@ -360,12 +360,20 @@ body {
   line-height: 1;
   background-color: #fff;
   color: #293746;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 660px) {
+  .container {
+    padding: 0 27px;
+  }
 }
 
 section .title {
@@ -377,8 +385,24 @@ section .title {
   color: #000;
 }
 
+@media screen and (max-width: 660px) {
+  section .title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}
+
 .firstScreen {
   background: linear-gradient(to bottom, #fff1e9, rgba(255, 241, 233, 0));
+}
+
+@media screen and (max-width: 430px) {
+  .firstScreen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 header .container {
@@ -398,6 +422,18 @@ header button {
   color: #666F79;
   background: none;
   padding: 15px 36px;
+}
+
+@media screen and (max-width: 660px) {
+  header button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  header .container {
+    padding: 34px 27px;
+  }
 }
 
 .logo {
@@ -464,12 +500,69 @@ header button {
   box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51), 0px 0px 15px 5px rgba(255, 174, 112, 0.5);
 }
 
+@media screen and (max-width: 740px) {
+  .hero {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .hero {
+    margin-bottom: 0;
+  }
+  .hero .container {
+    justify-content: space-around;
+    height: 80vh;
+  }
+  .hero .title {
+    font-size: 38.2px;
+    line-height: 1.2;
+    letter-spacing: 0.51px;
+    margin: 0;
+    text-align: left;
+  }
+  .hero .subTitle {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 56px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    text-align: left;
+  }
+  .hero button {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+  .hero .heroBtn {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #CBD6E2;
+    border-radius: 4px;
+    color: #666F79;
+    background: none;
+    padding: 15px 36px;
+    box-shadow: none;
+    margin-bottom: 10%;
+  }
+  .hero .heroBtn:hover {
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .hero .heroBtn {
+    display: none;
+  }
+}
+
 .features {
   margin-bottom: 120px;
 }
 
 .features ul {
   width: 100%;
+  display: block;
 }
 
 .features ul li {
@@ -507,17 +600,59 @@ header button {
   margin-left: 24px;
 }
 
+@media screen and (max-width: 1050px) {
+  .features ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .features ul li {
+    max-width: 80%;
+  }
+  .features ul li .text {
+    line-height: 1.47;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .features ul li {
+    padding: 18px;
+  }
+  .features ul li .text {
+    margin-left: 18px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .features {
+    margin-bottom: 80px;
+    margin-top: 18px;
+  }
+  .features ul {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .features ul li {
+    width: 100%;
+    margin: 15px auto;
+  }
+}
+
 .pricing {
   background: linear-gradient(223.85deg, #FACCA9 -13.11%, #FFAE70 51.64%);
   padding: 31px 0;
 }
 
-.pricing .container {
-  max-width: 100%;
-  padding: 50px;
+.pricing .wrapper {
+  width: 100%;
+  height: 100%;
   background-image: url(/IMG/logobg.svg);
   background-repeat: repeat space;
   background-position: top 0 left 30px;
+}
+
+.pricing .container {
+  padding: 50px;
 }
 
 .pricing .banner {
@@ -571,6 +706,49 @@ header button {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1050px) {
+  .pricing .banner {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pricing .banner {
+    width: 66.25%;
+  }
+  .pricing .banner::before {
+    content: url("/IMG/priceFree2.svg");
+    position: absolute;
+    top: -77px;
+    right: 112px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .pricing {
+    padding: 12px 0;
+  }
+  .pricing .container {
+    padding: 60px 27px;
+  }
+  .pricing .banner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 45px 0;
+    max-width: 280px;
+  }
+  .pricing .banner .title {
+    margin: 0;
+    line-height: 1.41;
+  }
+  .pricing .banner .pricingInfo {
+    display: block;
+    width: 100%;
+    margin: 0;
+    line-height: 2.25;
+  }
+}
+
 .faq {
   margin-top: 95px;
   margin-bottom: 95px;
@@ -585,7 +763,6 @@ header button {
 }
 
 .faq_item {
-  padding-bottom: 24px;
   border-bottom: 1px solid #f4f5f6;
   padding: 42px 52px 39px 72px;
 }
@@ -606,6 +783,31 @@ header button {
   margin-top: 35px;
 }
 
+@media screen and (max-width: 1050px) {
+  .faq_items {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .faq {
+    margin-top: 62px;
+    margin-bottom: 46px;
+  }
+  .faq_item {
+    padding: 24px;
+    font-size: 16px;
+    line-height: 1.69;
+    letter-spacing: 0.6px;
+  }
+  .faq_item-question {
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+}
+
 footer .container {
   border-top: 1px solid #666F79;
   padding: 38px 0;
@@ -617,6 +819,7 @@ footer .container {
 footer .copyright {
   font-family: inherit;
   font-size: 16px;
+  line-height: 1.71;
   color: #666F79;
 }
 
@@ -642,5 +845,48 @@ footer .author .footer_logo {
   justify-content: center;
   align-items: center;
   margin-left: 11px;
+}
+
+footer .author .footer_logo .svglogo_footer {
+  width: 17.4px;
+  height: 33.27px;
+  margin-left: 12px;
+}
+
+footer .author .footer_logo .svglogo2_footer {
+  width: 140.37px;
+  height: 10.2px;
+}
+
+@media screen and (max-width: 1250px) {
+  footer .container {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .author {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  footer .container {
+    padding: 49px 27px 35px 27px;
+  }
+  footer .copyright {
+    text-align: center;
+    font-size: 14px;
+  }
+  footer .author {
+    font-size: 14px;
+    justify-content: space-between;
+  }
+  footer .author .footer_logo .svglogo_footer {
+    width: 27.5px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

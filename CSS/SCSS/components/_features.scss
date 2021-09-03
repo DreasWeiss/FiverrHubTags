@@ -3,6 +3,7 @@
 
     ul {
         width: 100%;
+        display: block;
 
         li {
             display: flex;
@@ -36,6 +37,49 @@
                 letter-spacing: 1px;
                 color: $black;
                 margin-left: 24px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+        ul {
+            width: 90%;
+            margin: 0 auto;
+
+            li {
+                max-width: 80%;
+
+                .text {
+                    line-height: 1.47;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+        ul {
+            li {
+                padding: 18px;
+
+                .text {
+                    margin-left: 18px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+        margin-bottom: 80px;
+        margin-top: 18px;
+
+        ul {
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+
+            li {
+                width: 100%;
+                margin: 15px auto;
             }
         }
     }

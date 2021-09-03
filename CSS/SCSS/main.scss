@@ -12,12 +12,18 @@ body {
     line-height: 1;
     background-color: #fff;
     color: $black;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .container {
     max-width: 1240px;
     padding: 0 20px;
     margin: 0 auto;
+
+    @media screen and (max-width: 660px) {
+        padding: 0 27px;
+    }
 }
 
 section {
@@ -28,6 +34,11 @@ section {
         margin-bottom: 44px;
         text-align: center;
         color: #000;
+
+        @media screen and (max-width: 660px) {
+            font-size: 24px;
+            margin-bottom: 32px;
+        }
     }
 }
 
