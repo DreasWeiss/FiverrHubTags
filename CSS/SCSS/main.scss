@@ -1,8 +1,9 @@
 // Reset all css styles
-@import "./vendor/resetCss";
+@import "./vendor/_resetCss";
+@import "./vendor/_variables";
 
 // Main Styles
-body{
+body {
     font-family: 'Proxima Soft', sans-serif;
     font-weight: 400;
     font-weight: normal;
@@ -10,4 +11,11 @@ body{
     font-size: 20px;
 }
 
+.container {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 // Components
+@import "./components/_header";

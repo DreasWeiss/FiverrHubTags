@@ -1,0 +1,35 @@
+header {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        padding-top: 40px;
+    }
+
+    button {
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: bold;
+        border: 1px solid #CBD6E2;
+        border-radius: 4px;
+        color: $darkgrey;
+        background: none;
+        padding: 15px 36px;
+    }
+}
+
+.logo {
+    display: flex;
+
+    h1 {
+        font-family: inherit;
+        font-size: 18.8px;
+        font-weight: bold;
+        margin-right: 2px;
+    }
+
+    svg {
+        fill: $orange;
+    }
+}
