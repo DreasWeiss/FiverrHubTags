@@ -365,9 +365,16 @@ body {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1192px;
   padding: 0 20px;
   margin: 0 auto;
+  background: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -393,11 +400,23 @@ section .title {
 }
 
 .firstScreen {
+  width: 100%;
   background: linear-gradient(to bottom, #fff1e9, rgba(255, 241, 233, 0));
 }
 
-@media screen and (max-width: 430px) {
-  .firstScreen {
+.firstScreen .container {
+  background: url("../IMG/hero_bg.svg") no-repeat;
+  background-position: top 69% center;
+}
+
+@media screen and (max-width: 740px) {
+  .firstScreen .container {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .firstScreen .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -405,7 +424,13 @@ section .title {
   }
 }
 
-header .container {
+@media screen and (max-width: 480px) {
+  .firstScreen {
+    height: 100vh;
+  }
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -413,15 +438,47 @@ header .container {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 660px) {
+  header {
+    padding: 31px 0;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: inherit;
+  font-size: 18.8px;
+  font-weight: bold;
+  margin-right: 2px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+
+.logo svg {
+  fill: #F76A1D;
+}
+
 header button {
   font-family: inherit;
   font-size: 15px;
   font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 10px;
   border: 1px solid #CBD6E2;
   border-radius: 4px;
   color: #666F79;
   background: none;
-  padding: 15px 36px;
+  padding: 14px 35px;
+}
+
+header button:hover {
+  color: #293746;
+  border-color: #293746;
 }
 
 @media screen and (max-width: 660px) {
@@ -430,33 +487,59 @@ header button {
   }
 }
 
-@media screen and (max-width: 660px) {
-  header .container {
-    padding: 34px 27px;
+.hero button {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.66px;
+  line-height: 11px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #FFAE70 0%, #F97200 3.44%);
+  padding: 20.5px 83px;
+  margin-bottom: 100px;
+  box-shadow: 0px 8.83333px 13.25px rgba(130, 58, 11, 0.27), inset 0px -4.41667px 8.83333px rgba(206, 98, 6, 0.51), inset 0px 6.625px 8.83333px #FFAE70;
+}
+
+.hero button:hover {
+  box-shadow: 0px 8.83333px 13.25px rgba(130, 58, 11, 0.27), inset 0px -4.41667px 8.83333px rgba(206, 98, 6, 0.51), inset 0px 6.625px 8.83333px #FFAE70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51), 0px 0px 15px 5px rgba(255, 174, 112, 0.5);
+}
+
+@media screen and (max-width: 660px) and (min-width: 320px) {
+  .hero button {
+    margin-bottom: 18px;
+    padding: 21px 50px;
+    width: 100%;
+  }
+  .hero .heroBtn {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #CBD6E2;
+    border-radius: 4px;
+    color: #666F79;
+    background: none;
+    padding: 18.5px 36px;
+    box-shadow: none;
+    margin-bottom: 10%;
+  }
+  .hero .heroBtn:hover {
+    box-shadow: none;
+    color: #293746;
+    border-color: #293746;
   }
 }
 
-.logo {
-  display: flex;
-}
-
-.logo h1 {
-  font-family: inherit;
-  font-size: 18.8px;
-  font-weight: bold;
-  margin-right: 2px;
-}
-
-.logo svg {
-  fill: #F76A1D;
+@media screen and (min-width: 660px) {
+  .hero .heroBtn {
+    display: none;
+  }
 }
 
 .hero {
-  margin-bottom: 100px;
-  background: url("../IMG/hero_bg.svg") no-repeat center;
-}
-
-.hero .container {
+  padding-bottom: 114px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -467,7 +550,7 @@ header button {
   font-size: 45px;
   font-weight: 600;
   letter-spacing: 0.6px;
-  margin-top: 179px;
+  margin-top: 150px;
   color: #000000;
   margin-bottom: 0;
 }
@@ -477,42 +560,13 @@ header button {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.32px;
-  margin-top: 14px;
-  margin-bottom: 50px;
-}
-
-.hero button {
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.66px;
-  border: none;
-  border-radius: 4px;
-  color: #ffffff;
-  background: linear-gradient(180deg, #FFAE70 0%, #F97200 3.44%);
-  padding: 20px 78px;
-  margin-bottom: 100px;
-  box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51);
-}
-
-.hero button:hover {
-  box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51), 0px 0px 15px 5px rgba(255, 174, 112, 0.5);
-}
-
-@media screen and (max-width: 740px) {
-  .hero {
-    background: none;
-  }
+  margin-top: 18px;
+  margin-bottom: 52px;
 }
 
 @media screen and (max-width: 660px) {
   .hero {
-    margin-bottom: 0;
-  }
-  .hero .container {
-    justify-content: space-around;
-    height: 80vh;
+    padding-bottom: 0;
   }
   .hero .title {
     font-size: 38.2px;
@@ -529,47 +583,25 @@ header button {
     letter-spacing: 0.32px;
     text-align: left;
   }
-  .hero button {
-    margin-bottom: 18px;
-    width: 100%;
-  }
-  .hero .heroBtn {
-    font-family: inherit;
-    font-size: 15px;
-    font-weight: bold;
-    border: 1px solid #CBD6E2;
-    border-radius: 4px;
-    color: #666F79;
-    background: none;
-    padding: 15px 36px;
-    box-shadow: none;
-    margin-bottom: 10%;
-  }
-  .hero .heroBtn:hover {
-    box-shadow: none;
-  }
-}
-
-@media screen and (min-width: 660px) {
-  .hero .heroBtn {
-    display: none;
-  }
 }
 
 .features {
-  margin-bottom: 120px;
+  margin-bottom: 117px;
+}
+
+.features .container {
+  max-width: 882px;
 }
 
 .features ul {
   width: 100%;
+  padding: 0;
   display: block;
 }
 
 .features ul li {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 882px;
   padding: 24px 40px;
   background: #FFFFFF;
   box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.04), 0px 2.68036px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.79801px 5.32008px rgba(0, 0, 0, 0.0161557);
@@ -582,9 +614,9 @@ header button {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  background: linear-gradient(180deg, #FFAE70 0%, #F97200 3.44%);
   border-radius: 50%;
-  box-shadow: 0 14.3px 27.2px 0 rgba(247, 106, 29, 0.5), inset 0 13.6px 18.1px 0 #ffae70, inset 0 -9.1px 18.1px 0 rgba(206, 98, 6, 0.51);
-  background-image: linear-gradient(to top, #ffae70, #f97200);
+  box-shadow: inset 0px -4.41667px 8.83333px rgba(206, 98, 6, 0.51), inset 0px 6.625px 8.83333px #FFAE70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51), 0px 14.26321px 27.22222px 0px rgba(247, 106, 29, 0.5);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -619,6 +651,7 @@ header button {
   }
   .features ul li .text {
     margin-left: 18px;
+    font-size: 15px;
   }
 }
 
@@ -633,14 +666,14 @@ header button {
     margin: 0 auto;
   }
   .features ul li {
-    width: 100%;
+    max-width: 100%;
     margin: 15px auto;
   }
 }
 
 .pricing {
   background: linear-gradient(223.85deg, #FACCA9 -13.11%, #FFAE70 51.64%);
-  padding: 31px 0;
+  padding: 23px 0;
 }
 
 .pricing .wrapper {
@@ -750,7 +783,7 @@ header button {
 }
 
 .faq {
-  margin-top: 95px;
+  margin-top: 62px;
   margin-bottom: 95px;
 }
 
@@ -772,11 +805,6 @@ header button {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.94;
-  margin-bottom: 5px;
-}
-
-.faq_item-answer {
-  line-height: 1.35;
 }
 
 .faq_item-answer p:nth-child(2) {
@@ -785,7 +813,7 @@ header button {
 
 @media screen and (max-width: 1050px) {
   .faq_items {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 
@@ -803,13 +831,13 @@ header button {
   .faq_item-question {
     font-size: 16px;
     line-height: 1.38;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     margin-bottom: 12px;
   }
 }
 
 footer .container {
-  border-top: 1px solid #666F79;
+  border-top: 1px solid rgba(102, 111, 121, 0.3);
   padding: 38px 0;
   display: flex;
   align-items: center;
@@ -875,7 +903,7 @@ footer .author .footer_logo .svglogo2_footer {
 
 @media screen and (max-width: 660px) {
   footer .container {
-    padding: 49px 27px 35px 27px;
+    padding: 49px 0px 35px 0px;
   }
   footer .copyright {
     text-align: center;

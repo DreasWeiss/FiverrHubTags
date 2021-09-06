@@ -17,9 +17,14 @@ body {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1192px;
     padding: 0 20px;
     margin: 0 auto;
+    background: none;
+
+    @media screen and (max-width: 1200px) {
+        max-width: 90%;
+    }
 
     @media screen and (max-width: 660px) {
         padding: 0 27px;
@@ -45,6 +50,7 @@ section {
 // Components
 @import "./components/firstScreen";
 @import "./components/_header";
+@import "./components/buttons";
 @import "./components/heroSection";
 @import "./components/_features";
 @import "./components/pricing";

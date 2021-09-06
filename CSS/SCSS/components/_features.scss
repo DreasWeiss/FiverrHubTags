@@ -1,15 +1,18 @@
 .features {
-    margin-bottom: 120px;
+    margin-bottom: 117px;
+
+    .container {
+        max-width: 882px;
+    }
 
     ul {
         width: 100%;
+        padding: 0;
         display: block;
 
         li {
             display: flex;
             align-items: center;
-            width: 100%;
-            max-width: 882px;
             padding: 24px 40px;
             background: #FFFFFF;
             box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.04), 0px 2.68036px 17.869px rgba(0, 0, 0, 0.0238443), 0px 0.798012px 5.32008px rgba(0, 0, 0, 0.0161557);
@@ -21,9 +24,9 @@
                 justify-content: center;
                 align-items: center;
                 padding: 10px;
+                background: linear-gradient(180deg, #FFAE70 0%, #F97200 3.44%);
                 border-radius: 50%;
-                box-shadow: 0 14.3px 27.2px 0 rgba(247, 106, 29, 0.5), inset 0 13.6px 18.1px 0 #ffae70, inset 0 -9.1px 18.1px 0 rgba(206, 98, 6, 0.51);
-                background-image: linear-gradient(to top, #ffae70, #f97200);
+                box-shadow: inset 0px -4.41667px 8.83333px rgba(206, 98, 6, 0.51), inset 0px 6.625px 8.83333px #FFAE70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51), 0px 14.2632074356px 27.2222232819px 0px rgba(247, 106, 29, 0.5);
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
                 -ms-border-radius: 50%;
@@ -63,6 +66,7 @@
 
                 .text {
                     margin-left: 18px;
+                    font-size: 15px;
                 }
             }
         }
@@ -78,7 +82,7 @@
             margin: 0 auto;
 
             li {
-                width: 100%;
+                max-width: 100%;
                 margin: 15px auto;
             }
         }

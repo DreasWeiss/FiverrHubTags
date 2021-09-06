@@ -1,6 +1,6 @@
 footer {
     .container {
-        border-top: 1px solid $darkgrey;
+        border-top: 1px solid rgba($color: $darkgrey, $alpha: 0.3);
         padding: 38px 0;
         display: flex;
         align-items: center;
@@ -67,7 +67,7 @@ footer {
 
     @media screen and (max-width: 660px) {
         .container {
-            padding: 49px 27px 35px 27px;
+            padding: 49px 0px 35px 0px;
         }
 
         .copyright {

@@ -1,5 +1,5 @@
 .faq {
-    margin-top: 95px;
+    margin-top: 62px;
     margin-bottom: 95px;
 }
 
@@ -21,12 +21,9 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 1.94;
-    margin-bottom: 5px;
 }
 
 .faq_item-answer {
-    line-height: 1.35;
-
     p:nth-child(2) {
         margin-top: 35px;
     }
@@ -34,7 +31,7 @@
 
 @media screen and (max-width: 1050px) {
     .faq_items {
-        max-width: 90%;
+        max-width: 100%;
     }
 }
 
@@ -54,7 +51,7 @@
     .faq_item-question {
         font-size: 16px;
         line-height: 1.38;
-        letter-spacing: 1px;
+        letter-spacing: 0;
         margin-bottom: 12px;
     }
 }

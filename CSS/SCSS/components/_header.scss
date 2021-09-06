@@ -1,42 +1,27 @@
 header {
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    button {
-        font-family: inherit;
-        font-size: 15px;
-        font-weight: bold;
-        border: 1px solid #CBD6E2;
-        border-radius: 4px;
-        color: $darkgrey;
-        background: none;
-        padding: 15px 36px;
-
-        @media screen and (max-width: 660px) {
-            display: none;
-        }
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
     @media screen and (max-width: 660px) {
-        .container {
-            padding: 34px 27px;
-        }
+        padding: 31px 0;
     }
 }
 
 .logo {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     h1 {
         font-family: inherit;
         font-size: 18.8px;
         font-weight: bold;
         margin-right: 2px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
     }
 
     svg {

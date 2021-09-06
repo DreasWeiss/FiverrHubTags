@@ -1,10 +1,24 @@
 .firstScreen {
+    width: 100%;
     background: linear-gradient(to bottom, #fff1e9, rgba(255, 241, 233, 0));
 
-    @media screen and (max-width: 430px) {
+    .container {
+        background: url("../IMG/hero_bg.svg") no-repeat;
+        background-position: top 69% center;
+
+        @media screen and (max-width: 740px) {
+            background: none;
+        }
+
+        @media screen and (max-width: 480px) {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 }

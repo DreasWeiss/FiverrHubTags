@@ -1,19 +1,15 @@
 .hero {
-    margin-bottom: 100px;
-    background: url("../IMG/hero_bg.svg") no-repeat center;
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    padding-bottom: 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .title {
         font-family: inherit;
         font-size: 45px;
         font-weight: 600;
         letter-spacing: 0.6px;
-        margin-top: 179px;
+        margin-top: 150px;
         color: #000000;
         margin-bottom: 0;
     }
@@ -23,40 +19,12 @@
         font-size: 20px;
         font-weight: 600;
         letter-spacing: 0.32px;
-        margin-top: 14px;
-        margin-bottom: 50px;
-    }
-
-    button {
-        font-family: inherit;
-        font-size: 15px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 0.66px;
-        border: none;
-        border-radius: 4px;
-        color: #ffffff;
-        background: $btnGradient;
-        padding: 20px 78px;
-        margin-bottom: 100px;
-        box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51);
-
-        &:hover {
-            box-shadow: 0 8.8px 13.3px 0 rgba(130, 58, 11, 0.27), inset 0 6.6px 8.8px 0 #ffae70, inset 0 -4.4px 8.8px 0 rgba(206, 98, 6, 0.51), 0px 0px 15px 5px rgba(255, 174, 112, 0.5);
-        }
-    }
-
-    @media screen and (max-width: 740px) {
-        background: none;
+        margin-top: 18px;
+        margin-bottom: 52px;
     }
 
     @media screen and (max-width: 660px) {
-        margin-bottom: 0;
-
-        .container {
-            justify-content: space-around;
-            height: 80vh;
-        }
+        padding-bottom: 0;
 
         .title {
             font-size: 38.2px;
@@ -74,33 +42,9 @@
             letter-spacing: 0.32px;
             text-align: left;
         }
-
-        button {
-            margin-bottom: 18px;
-            width: 100%;
-        }
-
-        .heroBtn {
-            font-family: inherit;
-            font-size: 15px;
-            font-weight: bold;
-            border: 1px solid #CBD6E2;
-            border-radius: 4px;
-            color: $darkgrey;
-            background: none;
-            padding: 15px 36px;
-            box-shadow: none;
-            margin-bottom: 10%;
-
-            &:hover {
-                box-shadow: none;
-            }
-        }
     }
 
-    @media screen and (min-width: 660px) {
-        .heroBtn {
-            display: none;
-        }
+    @media screen and (max-width: 500px) {
+        // height: 80vh;
     }
 }
