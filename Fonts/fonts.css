@@ -1,7 +1,3 @@
-/** Proxima Nova **/
-
-
-
 @font-face {
     font-family: 'proxima_nova_altblack';
     src: url('./markSimonson_proximaNovaAltBlackWebfont.woff2') format('woff2'),
@@ -26,8 +22,7 @@
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: 
-         url('./markSimonson_proximaNovaAltRegularWebfont.woff') format('woff'),
+    src: url('./markSimonson_proximaNovaAltRegularWebfont.woff') format('woff'),
          url('./markSimonson_proximaNovaAltRegularWebfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -39,8 +34,7 @@
 
 @font-face {
     font-family: 'proxima_nova_scosfthin';
-    src: 
-         url('./markSimonson_proximaNovaScOsfThinWebfont.woff2') format('woff2'),
+    src: url('./markSimonson_proximaNovaScOsfThinWebfont.woff2') format('woff2'),
          url('./markSimonson_proximaNovaScOsfThinWebfont.woff') format('woff'),
          url('./markSimonson_proximaNovaScOsfThinWebfont.ttf') format('truetype');
     font-weight: normal;
@@ -54,8 +48,7 @@
 
 @font-face {
     font-family: 'proxima_nova_ltsemibold';
-    src: 
-         url('./markSimonson_proximaNovaSemiboldWebfont.woff2') format('woff2'),
+    src: url('./markSimonson_proximaNovaSemiboldWebfont.woff2') format('woff2'),
          url('./markSimonson_proximaNovaSemiboldWebfont.woff') format('woff'),
          url('./markSimonson_proximaNovaSemiboldWebfont.ttf') format('truetype');
     font-weight: normal;
@@ -66,8 +59,7 @@
 
 @font-face {
     font-family: 'proxima_nova_ltthin';
-    src: 
-         url('./markSimonson_proximaNovaThinWebfont.woff2') format('woff2'),
+    src: url('./markSimonson_proximaNovaThinWebfont.woff2') format('woff2'),
          url('./markSimonson_proximaNovaThinWebfont.woff') format('woff'),
          url('./markSimonson_proximaNovaThinWebfont.ttf') format('truetype');
     font-weight: normal;
