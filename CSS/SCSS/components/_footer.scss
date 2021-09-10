@@ -1,5 +1,6 @@
 footer {
-    .container {
+    .footer_container {
+        width: 100%;
         border-top: 1px solid rgba($color: $darkgrey, $alpha: 0.3);
         padding: 38px 0;
         display: flex;
@@ -9,7 +10,7 @@ footer {
 
     .copyright {
         font-family: inherit;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 1.71;
         color: $darkgrey;
 
@@ -23,7 +24,7 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        font-size: 16px;
+        font-size: 1.6rem;
         color: $darkgrey;
 
         svg {
@@ -49,15 +50,10 @@ footer {
         }
     }
 
-    @media screen and (max-width: 1250px) {
-        .container {
-            padding: 20px;
-        }
-    }
-
     @media screen and (max-width: 1050px) {
-        .container {
+        .footer_container {
             flex-direction: column;
+            padding: 49px 0px 35px 0px;
 
             .author {
                 margin-top: 35px;
@@ -66,17 +62,13 @@ footer {
     }
 
     @media screen and (max-width: 660px) {
-        .container {
-            padding: 49px 0px 35px 0px;
-        }
-
         .copyright {
             text-align: center;
-            font-size: 14px;
+            font-size: 1.6rem;
         }
 
         .author {
-            font-size: 14px;
+            font-size: 1.4rem;
             justify-content: space-between;
 
             .footer_logo {

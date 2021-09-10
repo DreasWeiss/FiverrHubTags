@@ -6,7 +6,8 @@ header {
     padding-bottom: 40px;
 
     @media screen and (max-width: 660px) {
-        padding: 31px 0;
+        padding-top: 31px;
+        padding-bottom: 0;
     }
 }
 
@@ -16,9 +17,8 @@ header {
     align-items: center;
 
     h1 {
-        font-family: inherit;
-        font-size: 18.8px;
-        font-weight: bold;
+        font-family: $bold;
+        font-size: 1.88rem;
         margin-right: 2px;
         line-height: 25px;
         letter-spacing: 0.02em;

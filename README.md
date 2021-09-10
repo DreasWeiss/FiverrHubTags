@@ -1,4 +1,4 @@
-# FiverrHubTags
+# HubTags
 Task: figma 2 HTML/CSS
 
 

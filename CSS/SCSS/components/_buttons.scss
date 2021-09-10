@@ -1,8 +1,7 @@
 header {
     button {
-        font-family: inherit;
-        font-size: 15px;
-        font-weight: bold;
+        font-family: $bold;
+        font-size: 1.5rem;
         letter-spacing: 0.5px;
         line-height: 10px;
         border: 1px solid #CBD6E2;
@@ -24,9 +23,8 @@ header {
 
 .hero {
     button {
-        font-family: inherit;
-        font-size: 15px;
-        font-weight: bold;
+        font-family: $bold;
+        font-size: 1.5rem;
         text-transform: uppercase;
         letter-spacing: 0.66px;
         line-height: 11px;
@@ -51,16 +49,15 @@ header {
         }
 
         .heroBtn {
-            font-family: inherit;
-            font-size: 15px;
-            font-weight: bold;
+            font-family: $bold;
+            font-size: 1.5rem;
             border: 1px solid #CBD6E2;
             border-radius: 4px;
             color: $darkgrey;
             background: none;
             padding: 18.5px 36px;
             box-shadow: none;
-            margin-bottom: 10%;
+            margin: 0;
 
             &:hover {
                 box-shadow: none;

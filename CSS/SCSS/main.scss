@@ -3,28 +3,29 @@
 @import "./vendor/_variables";
 
 // Main Styles
+html {
+    font-size: 10px;
+}
+
 body {
-    font-family: 'Proxima Soft', sans-serif;
-    font-weight: 400;
-    font-weight: normal;
+    font-family: $regular;
     font-style: normal;
-    font-size: 20px;
+    font-size: 10px;
     line-height: 1;
     background-color: #fff;
     color: $black;
-    width: 100%;
     box-sizing: border-box;
 }
 
 .container {
-    max-width: 1192px;
+    width: 100%;
+    max-width: 1240px;
     padding: 0 20px;
     margin: 0 auto;
     background: none;
+    box-sizing: border-box;
 
-    @media screen and (max-width: 1200px) {
-        max-width: 90%;
-    }
+    @media screen and (max-width: 1200px) {}
 
     @media screen and (max-width: 660px) {
         padding: 0 27px;
@@ -33,16 +34,15 @@ body {
 
 section {
     .title {
-        font-family: inherit;
-        font-size: 36px;
-        font-weight: 600;
+        font-family: $semibold;
+        font-size: 3.6rem;
         margin-bottom: 44px;
         text-align: center;
         color: #000;
 
-        @media screen and (max-width: 660px) {
-            font-size: 24px;
-            margin-bottom: 32px;
+        @media screen and (max-width: 1200px) and (min-width: 320px) {
+            font-size: calc(2.4rem + 12 * (100vw -320)/880);
+            margin-bottom: calc(3.2rem + 10 *(100vw -320)/880);
         }
     }
 }
